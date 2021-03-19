@@ -81,7 +81,7 @@ stages:
 build_on_marianas:
   stage: default_build
   variables:
-    SLURM_Q: "dl"
+    SLURM_Q: "dl_shared"
     MY_CLUSTER: "marianas"
     TIMELIMIT: '1:00:00'
   <<: *pnnl_tags_definition
