@@ -30,6 +30,7 @@ module load cuda/$MY_CUDA_VERSION
 module load openmpi/$MY_OPENMPI_VERSION
 module load cmake/$MY_CMAKE_VERSION
 module load magma/$MY_MAGMA_VERSION
+module load openblas-0.3.12-gcc-7.3.0-2qabz7u
 
 export MY_RAJA_DIR=$PROJ_DIR/$MY_CLUSTER/raja
 export MY_UMPIRE_DIR=$PROJ_DIR/$MY_CLUSTER/umpire
@@ -37,4 +38,4 @@ export MY_UMFPACK_DIR=$PROJ_DIR/$MY_CLUSTER/suitesparse
 export MY_METIS_DIR=$APPS_DIR/metis/$MY_METIS_VERSION
 export MY_HIOP_MAGMA_DIR=$APPS_DIR/magma/2.5.2/cuda10.2
 export MY_COINHSL_DIR=$PROJ_DIR/$MY_CLUSTER/ipopt
-EXTRA_CMAKE_ARGS="$EXTRA_CMAKE_ARGS" #" -DBLAS_LIBRARIES=/usr/lib64/libopenblas.so"
+# EXTRA_CMAKE_ARGS="$EXTRA_CMAKE_ARGS" #" -DBLAS_LIBRARIES=/usr/lib64/libopenblas.so"
