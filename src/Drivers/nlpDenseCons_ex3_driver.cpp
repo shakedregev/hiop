@@ -74,7 +74,7 @@ int main(int argc, char **argv)
   hiopNlpDenseConstraints nlp(nlp_interface);
 
   // relax var/con bounds before solving the problem
-  nlp.options->SetNumericValue("bound_relax_perturb", 1e-10);
+  nlp.options->SetNumericValue("bound_relax_perturb", 1e-6);
 
   //set options before the solver is even allocated
   nlp.options->SetStringValue("fixed_var", "relax");
