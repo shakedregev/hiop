@@ -7,7 +7,7 @@
 /** Nonlinear *highly nonconvex* and *rank deficient* problem test for the Filter IPM
  * Newton of HiOp. It uses a Sparse NLP formulation. The problem is based on Ex6.
  *
- *  min   -(2*convex_obj-1)*sum 1/4* { (x_{i}-1)^4 : i=1,...,n} + 0.5x^Tx
+ *  min   (2*convex_obj-1)*sum 1/4* { (x_{i}-1)^4 : i=1,...,n} + 0.5x^Tx
  *  s.t.
  *            4*x_1 + 2*x_2                     == 10
  *        5<= 2*x_1         + x_3
